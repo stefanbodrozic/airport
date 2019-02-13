@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Airport - Home</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/session.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/search.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.min.css">
+	<script src="js/jquery.datetimepicker.full.js"></script>
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+
+			<nav class="nav">
+				<ul class="ul-nav">
+					<li><a href="index.html">Index</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+
+	</header>
+
+	<div class="container">
+
+		<h1 style="padding-top:50px; color:white;">Airport system</h1>
+
+		<div class="search-container">
+			<form action="" method="">
+				<div class="fields">
+					<span>
+						<input type="text" name="" placeholder="search" class="search-input">
+					</span>
+					<span>
+						<input type="submit" name="" value="Search" class="search-input-submit">
+					</span> 
+					<br/>
+				</div>
+				<div class="conditions">
+					<span>
+						<input type="text" id="sort-by" list="sort-list-options" placeholder="sort by" class="condition-input"/>
+
+						<datalist id="sort-list-options">
+							<option value="Number of flight-ASC">
+							<option value="Number of flight-DESC">
+							<option value="Departure airport-ASC">
+							<option value="Departure airport-DESC">
+							<option value="Incoming airport-ASC">
+							<option value="Incoming airport-DESC">
+							<option value="Departure date-ASC">
+							<option value="Departure date-DESC">
+							<option value="Arrival date-ASC">
+							<option value="Arrival date-DESC">
+							<option value="Price-ASC">
+							<option value="Price-DESC">
+						</datalist>
+					</span>
+					<span>
+						<label class="container-checkbox">Number of flight (option only for search)
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+					</span>
+
+					<br/>
+					<span>
+						<input type="text" id="departure-airport-id" list="departure-airports" placeholder="departure airport" class="condition-input"/>
+
+						<datalist id="departure-airports">
+
+						</datalist>
+					</span>
+					<span>
+						<input type="text" id="incoming-airport-id" list="incoming-airports" placeholder="incoming airport" class="condition-input"/>
+
+						<datalist id="incoming-airports">
+
+						</datalist>
+					</span>
+					<br/>
+					<span>
+						<input type="text" name="" placeholder="Departure date" id="departuredatetime" class="condition-input">
+					</span>
+					<span>
+						<input type="text" name="" placeholder="Arrival date" id="arrivaldatetime" class="condition-input">
+					</span>
+					<br/>
+					<span>
+						<input type="text" name="" id="min-price" placeholder="min price" class="condition-input">
+					</span>
+					<span>
+						<input type="text" name="" id="max-price" placeholder="max price" class="condition-input">
+					</span>
+				</div>
+
+			</form>	
+		</div>
+
+		<div class="flights">
+
+			<h1 class="flights-h1" style="color:white;">Flights</h1>
+
+			<table class="flights-table">
+			</table>
+
+		</div>
+
+	</div>
+
+
+</body>
+<script>
+	$('#departuredatetime').datetimepicker({
+		step: 1
+	});
+	$('#arrivaldatetime').datetimepicker({
+		step: 1
+	});
+</script>
+</html>

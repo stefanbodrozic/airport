@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Airport - Home</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/session.js"></script>
+	<script src="js/admin-panel.js"></script>
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+
+			<nav class="nav">
+				<ul class="ul-nav">
+					<li><a href="index.html">Index</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+
+	</header>
+
+	<div class="container">
+
+		<h1 style="padding-top:50px; color:white;">Admin panel</h1>
+
+		<div class="search-container">
+			<form action="" method="">
+				<div class="fields">
+					<span>
+						<input type="text" name="" placeholder="search" class="search-input">
+					</span>
+					<span>
+						<input type="submit" name="" value="Search" class="search-input-submit">
+					</span> 
+					<br/>
+				</div>
+				<div class="conditions">
+					<span>
+						<input type="text" id="sort-by" list="sort-list-options" placeholder="sort by" class="condition-input"/>
+
+						<datalist id="sort-list-options">
+							<option value="Username-ASC">
+							<option value="Username-DESC">
+							<option value="ADMIN-ASC">
+							<option value="ADMIN-DESC">
+							<option value="USER-ASC">
+							<option value="USER-DESC">
+						</datalist>
+					</span>
+					<span>
+						<label class="container-checkbox">Username (only for search)
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+						<input type="text" id="search-by" list="search-list-options" placeholder="search by role" class="condition-input"/>
+
+						<datalist id="search-list-options">
+							<option value="ADMIN">
+							<option value="USER">
+						</datalist>
+					</span>
+
+					<br/>
+					
+				</div>
+
+			</form>	
+		</div>
+
+		<div class="users" style="padding-top: 130px;">
+
+			<h1 class="user-h1" style="color:white;">Users</h1>
+
+			<table class="flights-table">
+			</table>
+
+		</div>
+
+	</div>
+
+
+</body>
+</html>

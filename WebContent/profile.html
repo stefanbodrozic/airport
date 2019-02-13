@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Airport - Flight</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/session.js"></script>
+	<script src="js/profile.js"></script>
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+
+			<nav class="nav">
+				<ul class="ul-nav">
+					<li><a href="index.html">Index</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+
+	</header>
+
+	<div class="container">
+
+		<h1 style="padding-top:50px; color:white;">Profile</h1>
+
+
+		<div class="user" style="padding-top: 40px;">
+			
+			<form>
+				<div class="fields" style="display: inline-block;">
+					<span>
+						<input type="text" name="" placeholder="username" id="username" class="condition-input" style="margin: 10px;" readonly>
+					</span>
+					<br>
+					<span>
+						<input type="text" name="" placeholder="password" id="password" class="condition-input" style="margin: 10px;" readonly>
+					</span>
+					<br>
+					<span>
+						<input type="text" name="" placeholder="registration date" id="registration-date" class="condition-input" style="margin: 10px;" readonly>
+					</span>
+					<br>
+					<span>
+						<input type="text" name="" placeholder="role" id="user-role" class="condition-input" style="margin: 10px;" readonly>
+					</span>
+					<br>
+					<span>
+						<input type="text" id="role" value="ADMIN" list="role-options" placeholder="change role" class="condition-input" style="margin: 10px;" hidden>
+
+						<datalist id="role-options">
+							<option>ADMIN</option>
+							<option>USER</option>
+						</datalist>
+					</span>
+					<br>
+					<span>
+						<label class="container-checkbox">Blocked
+							<input type="checkbox" name="blocked" id="blocked-checkbox">
+							<span class="checkmark" style="background: red;"></span>
+						</label>
+					</span>
+					<br>
+					<button type="" id="btn-edit-user" class="search-input-submit" style="margin: 20px;">Edit user</button>
+					<button type="" id="btn-confirm-edit" class="search-input-submit">Confirm edit</button>
+				</div>
+			</form>
+
+		</div>
+
+
+		<div class="reserved-tickets" style="padding-top: 130px;">
+
+			<h1 class="user-h1" style="color:white;">Reserved tickets</h1>
+
+			<table class="flights-table" id="reserved-tickets-table">
+			</table>
+
+		</div>
+
+
+		<div class="bought-tickets" style="padding-top: 130px;">
+
+			<h1 class="user-h1" style="color:white;">Bought tickets</h1>
+
+			<table class="flights-table" id="bought-tickets-table">
+			</table>
+
+		</div>
+
+	</div>
+
+
+</body>
+</html>

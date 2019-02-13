@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Airport - Flight</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/confirm-reservation.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/session.js"></script>
+	<script src="js/confirm-reservation.js"></script>
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+
+			<nav class="nav">
+				<ul class="ul-nav">
+					<li><a href="index.html">Index</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+
+	</header>
+
+	<div class="container">
+
+		<h1 style="padding-top:50px; color:white;">Reserve/Buy ticket</h1>
+
+		<div class="flights">
+
+			<h1 class="flights-h1" style="color:white;">Flight</h1>
+			<br>
+			
+			<table class="flights-table" id="departure-flight-table">
+
+			</table>
+			
+			<br>
+			<div class="available-seats" style="float: left; color: white">
+				
+			</div>
+
+
+			<h1 style="color:white;" id="incoming-flight-h1">Incoming flights</h1>
+
+			<table class="flights-table" id="incoming-flights">
+			
+			</table>
+			
+
+			<br>
+			<div style="position: absolute;">
+
+				<input type="text" id="selected-incoming-flight" list="choose-incoming-flight" placeholder="choose incoming flight">
+
+				<datalist id="choose-incoming-flight">
+					
+				</datalist>
+
+				<input type="submit" name="" value="Next" class="button-next">
+			</div>
+
+		</div>
+
+</body>
+
+</html>

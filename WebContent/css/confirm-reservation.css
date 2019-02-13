@@ -1,0 +1,39 @@
+html, body {
+	background: #2F1E27;
+}
+
+body {
+	counter-reset: section;
+	text-align: center;
+
+}
+
+form{
+	margin-top:25px;
+	display:inline-block;
+}
+
+
+.firstname-span, .lastname-span {
+	margin-bottom: 22px;
+	display: inline-block;
+}
+
+input{
+  border:none;
+  outline:none;
+  display:inline-block;
+  height:34px;
+  vertical-align:middle;
+  position:relative;
+  bottom:14px;
+  right:9px;
+  border-radius:22px;
+  width:220px;
+  box-sizing:border-box;
+  padding:0 18px; 
+}
+
+.submit {
+	padding-top: 40px;
+}

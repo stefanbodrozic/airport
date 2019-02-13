@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Airport - Flight</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/session.js"></script>
+	<script src="js/flight.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.min.css">
+	<script src="js/jquery.datetimepicker.full.js"></script>
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+
+			<nav class="nav">
+				<ul class="ul-nav">
+					<li><a href="index.html">Index</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+
+	</header>
+
+	<div class="container">
+
+		<h1 style="padding-top:50px; color:white;">Airport system</h1>
+
+		<div class="flights">
+
+			<h1 class="flights-h1" style="color:white;">Flight</h1>
+			<br>
+			
+			<table class="flights-table" id="flights-table">
+
+			</table>
+			<br>
+			<div class="available-seats" style="float: left; color: white;">
+				
+			</div>
+
+		</div>
+
+		<div class="admin-options" style="display: inline-block; padding-top: 200px;">
+			<button type="submit" id="delete-flight" class="flights-submit-buy" style="background: red;">Delete</button>
+			<button type="submit" id="edit-flight" class="flights-submit-buy" style="background: yellow;">Edit</button>
+		</div>
+
+		<div class="edit-flight" style="padding-top: 40px;">
+			
+			<form>
+				<div class="fields" style="display: inline-block;">
+					<span>
+						<input type="text" name="" placeholder="Arrival date" id="arrivaldatetime" class="condition-input" style="margin: 10px;">
+					</span>
+					<br/>
+					<span>
+						<input type="text" id="departure-airport-id" list="departure-airports" placeholder="Departure airport" class="condition-input" style="margin: 10px;"/>
+
+						<datalist id="departure-airports">
+						</datalist>
+
+					</span>
+					<br/>
+					<span>
+						<input type="text" id="incoming-airport-id" list="incoming-airports" placeholder="Incoming airport" class="condition-input" style="margin: 10px;"/>
+
+						<datalist id="incoming-airports">
+						</datalist>
+
+					</span>
+					<br/>
+					<span>
+						<input type="text" name="" id="seat-number" placeholder="Total seat number" class="condition-input" style="margin: 10px;">
+					</span>
+					<br/>
+					<span>
+						<input type="text" name="" id="price" placeholder="Price" class="condition-input" style="margin: 10px;">
+					</span>
+					<br>
+					<button type="" id="btn-update-flight" class="search-input-submit" style="margin: 20px;">Edit flight</button>
+				</div>
+			</form>
+
+		</div>
+
+		<div class="reserved-tickets">
+			<h1 style="color: white;">Reserved tickets</h1>
+
+			<table class="flights-table" id="reserved-tickets-table" style="padding-top: 120px;">
+
+			</table>
+			<br>
+				
+			
+
+		</div>
+
+		<div class="bought-tickets">
+			<h1 style="color: white;">Bought tickets</h1>
+			
+			<table class="flights-table" id="bought-tickets-table">
+
+			</table>
+			<br>
+				
+			</div>
+
+		</div>
+
+	</div>
+
+
+</body>
+<script>
+	// $('#departuredatetime').datetimepicker({
+		// step: 1
+	// }); 
+	$('#arrivaldatetime').datetimepicker({
+		step: 1
+	});
+</script>
+</html>
